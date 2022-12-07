@@ -12,13 +12,13 @@ class Ray {
     this.speed = this.speed + this.distance / 150;
   }
   check() {
-    this.stillOnScreen = (this.distance < p5.width / 2);
+    this.stillOnScreen = (this.distance < p5.displayWidth / 2);
   }
   show() {
     p5.push();// remember the fill and stroke before
-    p5.fill(255, 255, 255, 255 - this.distance );
-    p5.stroke(200, 200, 200, 255 - this.distance * 2);
-    p5.strokeWeight(5);
+    p5.fill(255, 255, 255);//, 255 - this.distance );
+    p5.stroke(230, 230, 230);// 255 - this.distance);
+    p5.strokeWeight(7);
     // if (this.stillOnScreen) {
     //   for (var i = 0; i < 6; i++) {
     //     var x = this.origin + (this.distance + i * 8) * cos(this.angle);
