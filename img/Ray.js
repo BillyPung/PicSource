@@ -1,31 +1,3 @@
-let allRays = [];
-let angle = 0;
-timeCount = 0;
-
-function setup() {
-  createCanvas(1920,1080);
-}
-
-function draw() {
-  background(220);
-  for (var i = 0; i < allRays.length; i++) {
-    allRays[i].move();
-    allRays[i].check();
-    allRays[i].show();
-  }
- push(); //remember what it was like before translate, rotate
-  translate(width / 2, height / 2);
-  rotate(angle);
-  if(timeCount >= 5){
-    allRays.push(new Ray(width/2, height / 2, angle));
-    timeCount = 0;
-  }
-  else{ timeCount += 1;}
-  angle += random(0.1,0.5)
-  pop(); //restore what translate and rotate messed up
-  //push and pop not really neccessary if last thing draw
-}
-
 class Ray {
   constructor(x, y, startAngle) {
     this.originX = x;
