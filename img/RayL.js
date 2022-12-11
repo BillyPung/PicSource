@@ -22,7 +22,7 @@ class RayL {
     p5.push();// remember the fill and stroke before
     p5.fill(255, 255, 255);//, 255 - this.distance );
     p5.stroke(255, 255, 255);//, 255 - this.distance * 2);
-    p5.strokeWeight(2);
+    p5.strokeWeight(7);
     // if (this.stillOnScreen) {
     //   for (var i = 0; i < 6; i++) {
     //     var x = this.origin + (this.distance + i * 8) * cos(this.angle);
