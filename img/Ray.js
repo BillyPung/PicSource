@@ -1,4 +1,4 @@
-class Ray {
+class RayL {
   constructor(x, y, startAngle) {
     this.originX = x;
     this.originY = y;
