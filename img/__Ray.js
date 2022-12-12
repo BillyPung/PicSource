@@ -6,7 +6,7 @@ class RayL {
     this.angle = startAngle;
     this.stillOnScreen = true;
     this.speed = 1;
-    this.length = p5.floor(p5.random(4,12));
+    this.length = p5.floor(p5.random(7,16));
   }
   move() {
     this.distance = this.distance + this.speed;
@@ -21,9 +21,9 @@ class RayL {
   }
   show() {
     p5.push();// remember the fill and stroke before
-    p5.fill(255, 255, 255);//, 255 - this.distance );
-    p5.stroke(255, 255, 255);//, 255 - this.distance * 2);
-    p5.strokeWeight(6);
+    //p5.fill(255, 255, 255);//, 255 - this.distance );
+    p5.stroke(26, 254, 73);//, 255 - this.distance * 2);
+    p5.strokeWeight(8);
     // if (this.stillOnScreen) {
     //   for (var i = 0; i < 6; i++) {
     //     var x = this.origin + (this.distance + i * 8) * cos(this.angle);
