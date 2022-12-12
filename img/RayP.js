@@ -1,4 +1,4 @@
-class RayY {
+class RayP {
   constructor(x, y, startAngle) {
     this.originX = x;
     this.originY = y;
@@ -6,7 +6,7 @@ class RayY {
     this.angle = startAngle;
     this.stillOnScreen = true;
     this.speed = 1;
-    this.length = p5.floor(p5.random(7,16));
+    this.length = p5.floor(p5.random(8,17));
   }
   move() {
     this.distance = this.distance + this.speed;
@@ -22,8 +22,8 @@ class RayY {
   show() {
     p5.push();// remember the fill and stroke before
     //p5.fill(255, 255, 255);//, 255 - this.distance );
-    p5.stroke(247,255,0);//, 255 - this.distance * 2);
-    p5.strokeWeight(8);
+    p5.stroke(69,26,138);//, 255 - this.distance * 2);
+    p5.strokeWeight(9);
     // if (this.stillOnScreen) {
     //   for (var i = 0; i < 6; i++) {
     //     var x = this.origin + (this.distance + i * 8) * cos(this.angle);
