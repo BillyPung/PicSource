@@ -1,4 +1,4 @@
-class RayP {
+class RayLP {
   constructor(x, y, startAngle) {
     this.originX = x;
     this.originY = y;
@@ -22,7 +22,7 @@ class RayP {
   show() {
     p5.push();// remember the fill and stroke before
     //p5.fill(255, 255, 255);//, 255 - this.distance );
-    p5.stroke(69,26,138);//, 255 - this.distance * 2);
+    p5.stroke(220,65,255);//, 255 - this.distance * 2);
     p5.strokeWeight(9);
     // if (this.stillOnScreen) {
     //   for (var i = 0; i < 6; i++) {
